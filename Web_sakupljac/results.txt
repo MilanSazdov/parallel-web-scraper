@@ -1,0 +1,30 @@
+Parallel fetching results.
+Number of downloaded pages: 130
+Number of unique URLs: 130
+Calculations took 33.09099 seconds.
+Time per book: 0.03309 seconds.
+Time per page: 0.25455 seconds.
+
+Star Rating Analytics:
+Number of books with 1 star(s): 226
+Number of books with 2 star(s): 196
+Number of books with 3 star(s): 203
+Number of books with 4 star(s): 179
+Number of books with 5 star(s): 196
+Average rating: 2.92300 stars.
+
+Average price of book: 35.07035 GBP.
+
+The cheapest book:
+Title: An Abundance of Katherines
+Price: 10.00
+Stars: 5
+
+The most expensive book:
+Title: The Perfect Play (Play by Play #1)
+Price: 59.99
+Stars: 3
+
+The search was not used.
+Serial calculations took 80.87 seconds.
+Parallel is 47.78 seconds faster than serial.
