@@ -193,24 +193,43 @@ cd parallel-web-scraper/Web_sakupljac
 
 ### 2. Build
 
-Make sure you have:
-- A C++20-compatible compiler (g++, clang++, or MSVC)
-- Intel TBB installed
-- libcurl dev packages installed
+You have two options:
 
-Example for Linux with g++:
+#### Option A – Visual Studio (Windows)
+
+1. Open `Web_sakupljac/Web_sakupljac.sln` in Visual Studio.  
+2. Select the desired configuration (e.g. `x64-Debug` or `x64-Release`).  
+3. Press **Build → Build Solution** or `Ctrl+Shift+B`.  
+4. Run the project with **F5**.
+
+#### Option B – g++ / CLI build
+
+If you want to build from the command line (Linux, WSL, MinGW, etc.):
+
+Make sure you have:
+
+- C++20 compatible compiler (`g++`, `clang++`, etc.)  
+- Intel TBB installed  
+- libcurl development libraries installed  
+
+From inside `Web_sakupljac/`:
+
 ```bash
 g++ -std=c++20 -O2 \
-    main.cpp Scraper.cpp Parser.cpp Downloader.cpp Stats.cpp \
+    main.cpp web_scraper.cpp \
     -ltbb -lcurl \
-    -o parallel-web-scraper
+    -o web_scraper
 ```
-
-Adjust source file names and paths if your structure differs.
+> Adjust library flags (-ltbb, -lcurl) if your platform uses different names.
 
 ### 3. Run
+
+From the `Web_sakupljac/` directory:
+
 ```bash
-./parallel-web-scraper
+./web_scraper
+# or on Windows
+web_scraper.exe
 ```
 
 The program will:
@@ -240,7 +259,8 @@ The program will:
 
 ## 👥 Author
 
-Milan Sazdov
-Parallel systems • C++ • High-performance applications
+Project developed by:
+* **Milan Sazdov** - [LinkedIn](https://www.linkedin.com/in/milansazdov) | [Email](mailto:milansazdov@gmail.com) 
 
-Feel free to open an issue or reach out if you have suggestions or questions. 
+---
+
