@@ -187,8 +187,8 @@ The project is designed to **showcase speedup** on multi-core CPUs:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/<MilanSazdov>/parallel-web-scraper.git
-cd parallel-web-scraper
+git clone https://github.com/MilanSazdov/parallel-web-scraper.git
+cd parallel-web-scraper/Web_sakupljac
 ```
 
 ### 2. Build
