@@ -1,6 +1,6 @@
 # ⚡ Parallel Web Scraper – High-Performance C++ + Intel TBB
 
-![Parallel Web Scraper Banner](./assets/parallel-web-scraper-banner.png)
+![Parallel Web Scraper Banner](./assets/web-scraper-banner.png)
 
 <div align="center">
 
